@@ -5,7 +5,7 @@ class Cat
 
   def initialize(name, owner)
     @name = name
-    @owner = owner
+    @owner = Owner.new
     owner.buy_cat(self) unless owner.pets.include?(self)
     @mood = "nervous"
     @species = cat
