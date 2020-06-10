@@ -2,13 +2,12 @@ class Owner
   attr_reader :name, :species
 
 @@owners = []
-@pets = []
-@cats = []
-@dogs = []
-  
+
   def initialize(name)
     @name = name
     @pets = []
+    @cats = []
+    @dogs = []
     @species = "human"
     @@owners << self
   end
