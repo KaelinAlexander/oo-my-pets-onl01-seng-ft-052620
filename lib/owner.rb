@@ -1,3 +1,5 @@
+require "pry"
+
 class Owner
   attr_reader :name, :species
 
@@ -66,8 +68,8 @@ class Owner
     # self.pets.select{|pet| pet.mood = "nervous"}
     cats.each{|cat| cat.mood = "nervous"}
     dogs.each{|dog| dog.mood = "nervous"}
-    cats.clear
-    dogs.clear
+    pets
+    binding.pry
   end
   
 end
