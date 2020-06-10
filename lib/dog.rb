@@ -1,5 +1,5 @@
 class Dog
-  attr_accessor :owner, :mood, :species
+  attr_accessor :owner, :mood
   attr_reader :name
   @@dogs = []
 
@@ -8,7 +8,6 @@ class Dog
     @owner = owner
     # owner.buy_dog(self) unless owner.pets.include?(self)
     @mood = "nervous"
-    # @species = dog
     @@dogs << self
   end
   
