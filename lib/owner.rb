@@ -33,6 +33,14 @@ class Owner
     @pets
   end
   
+  def cats
+    @cats
+  end
+  
+  def dogs
+    @dogs
+  end
+  
   def buy_dog(dog)
     dog = Dog.new
     @pets << dog
@@ -43,6 +51,7 @@ class Owner
   def buy_cat(cat)
     cat = Cat.new
     @pets << cat
+    @cats << cat
     cat.owner = self unless cat.owner == self
   end
   
