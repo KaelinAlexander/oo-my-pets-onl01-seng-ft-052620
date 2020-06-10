@@ -8,7 +8,6 @@ class Cat
     @owner = owner
     # owner.buy_cat(self) unless owner.pets.include?(self)
     @mood = "nervous"
-    @species = cat
     @@cats << self
   end
   
