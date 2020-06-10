@@ -42,14 +42,14 @@ class Owner
   end
   
   def buy_dog(dog)
-    dog = Dog.new(dog)
+    dog = Dog.new(dog, self)
     @pets << dog
     @dogs << dog
     dog.owner = self unless dog.owner == self
   end
   
   def buy_cat(cat)
-    cat = Cat.new(cat)
+    cat = Cat.new(cat, self)
     @pets << cat
     @cats << cat
     cat.owner = self unless cat.owner == self
