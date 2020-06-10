@@ -12,7 +12,7 @@ class Cat
     @@cats << self
   end
   
-  def cats
+  def all
     @@cats
   end
   
