@@ -11,7 +11,7 @@ class Cat
     @@cats << self
   end
   
-  def all
+  def self.all
     @@cats
   end
   
