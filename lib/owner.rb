@@ -33,7 +33,7 @@ class Owner
   end
   
   def cats
-    cats.all collect{|cat| cat.owner == self}
+    cats.all.collect{|cat| cat.owner == self}
   end
   
   def dogs
