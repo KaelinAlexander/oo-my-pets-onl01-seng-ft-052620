@@ -70,7 +70,6 @@ class Owner
     dogs.each{|dog| dog.mood = "nervous"}
     cats.clear
     dogs.clear
-    binding.pry
   end
   
 end
