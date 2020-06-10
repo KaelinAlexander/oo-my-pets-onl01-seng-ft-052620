@@ -30,7 +30,7 @@ class Owner
     @@owners = []
   end
   
-  def pets
+  def list_pets
     @pets
   end
   
