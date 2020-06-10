@@ -12,7 +12,7 @@ class Cat
   end
   
   def self.all
-    @@cats.uniq
+    @@cats
   end
   
   def owner=(owner)
