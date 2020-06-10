@@ -18,7 +18,7 @@ class Owner
   end
   
   def self.all
-    @@all
+    @@owners
   end
   
   def self.count
@@ -26,7 +26,7 @@ class Owner
   end
   
   def self.reset_all
-    @@all = []
+    @@owners = []
   end
   
   def pets
