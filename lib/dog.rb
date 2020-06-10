@@ -11,6 +11,10 @@ class Dog
     @@dogs << self
   end
   
+  def all
+    @@dogs
+  end
+  
   def owner=(owner)
     @owner = owner
     owner.buy_dog(self) unless owner.pets.include?(self)
