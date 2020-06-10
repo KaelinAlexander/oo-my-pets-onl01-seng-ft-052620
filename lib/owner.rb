@@ -1,13 +1,16 @@
 class Owner
   attr_reader :name, :species
-  
-@@all = []
+
+@@owners = []
+@pets = []
+@cats = []
+@dogs = []
   
   def initialize(name)
     @name = name
     @pets = []
     @species = human
-    @@all << self
+    @@owners << self
   end
   
   def say_species
@@ -33,6 +36,7 @@ class Owner
   def buy_dog(dog)
     dog = Dog.new
     @pets << dog
+    @dogs << dog
     dog.owner = self unless dog.owner == self
   end
   
