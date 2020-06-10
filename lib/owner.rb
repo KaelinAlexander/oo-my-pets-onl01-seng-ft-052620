@@ -49,7 +49,7 @@ class Owner
   end
   
   def buy_cat(cat)
-    cat = Cat.new(dog)
+    cat = Cat.new(cat)
     @pets << cat
     @cats << cat
     cat.owner = self unless cat.owner == self
