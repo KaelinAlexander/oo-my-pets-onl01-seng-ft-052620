@@ -66,7 +66,8 @@ class Owner
     # self.pets.select{|pet| pet.mood = "nervous"}
     cats.each{|cat| cat.mood = "nervous"}
     dogs.each{|dog| dog.mood = "nervous"}
-    pets.clear
+    cats.clear
+    dogs.clear
   end
   
 end
