@@ -17,7 +17,7 @@ class Cat
   
   def owner=(owner)
     @owner = owner
-    owner.buy_cat(self) unless owner.pets.include?(self)
+    # owner.buy_cat(self) unless owner.pets.include?(self)
   end
 
 end
