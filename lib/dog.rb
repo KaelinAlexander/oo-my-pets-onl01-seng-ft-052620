@@ -6,7 +6,7 @@ class Dog
   def initialize(name, owner)
     @name = name
     @owner = owner
-    owner.buy_dog(self) unless owner.pets.include?(self)
+    # owner.buy_dog(self) unless owner.pets.include?(self)
     @mood = "nervous"
     @species = dog
     @@dogs << self
