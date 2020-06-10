@@ -1,5 +1,5 @@
 class Cat
-  attr_accessor :owner, :mood, :species
+  attr_accessor :owner, :mood
   attr_reader :name
   @@cats = []
 
