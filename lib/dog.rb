@@ -3,7 +3,7 @@ class Dog
   attr_reader :name
   @@dogs = []
 
-  def initialize
+  def initialize(name, owner)
     @name = name
     @owner = owner
     # owner.buy_dog(self) unless owner.pets.include?(self)
