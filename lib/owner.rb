@@ -8,6 +8,9 @@ class Owner
     @species = human
   end
   
+  def say_species
+    puts ""
+  
   def pets
     @pets
   end
